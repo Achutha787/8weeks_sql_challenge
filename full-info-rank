@@ -1,0 +1,3 @@
+SELECT jt.customer_id,jt.order_date,jt.product_id,jt.product_name,jt.price,jtr.mem,jtr.rnk from joined_table1 jt
+left join joined_table_rnk jtr 
+using(customer_id,order_date,product_id,product_name,price)
